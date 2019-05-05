@@ -1,0 +1,111 @@
+@font-face {
+  font-family: DancingScript;
+  src: url(../Tipografias/DancingScript.ttf);
+}
+
+body{
+  background: #02010a;
+  font-family: DancingScript;
+}
+
+#contenido{
+  margin: 0 auto;
+}
+
+#galeria{
+	background-color: #d5c75f;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.sombra {
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+header{
+  border-radius: 10px 10px 0 0;
+  background: #5b7989;
+  color: #ffffff;
+}
+header h1{
+  padding: 0% 0% 0% 2%;
+  width: 40%;
+  float: left;
+  text-align: center;
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+#menuprincipal {
+	width: 50%;
+	float: left;
+	padding-top: 1%;
+}
+
+ul{
+  list-style-type: none;
+  text-align: right;
+  font-size: 1.3em;
+}
+
+li{
+  display: inline;
+  padding: 2%;
+}
+
+ul li a {
+	color: #ffffff;
+}
+
+a.visitada {
+	text-decoration: none;
+}
+
+footer {
+	background-color: #C6d5c5;
+	border-radius: 0 0 10px 10px;
+	display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+.cajafooter img{
+		width: 30px;
+		height: 30px;
+}
+
+@media (min-width: 900px) {
+  #contenido {
+  	width: 900px;
+  }
+  header {
+  	width: 900px;
+  	min-height: 80px;
+  }
+  footer {
+  	width: 900px;
+  	min-height: 200px;
+  }
+  .cajafooter {
+  	width: 20%;
+  	height: auto;
+  	padding: 1%2.5% 1% 2.5%;
+  }
+}
+
+@media (max-width: 900px) {
+.contenido {
+	width: 100%;
+}
+header {
+	min-height: 200px;
+}
+header h1 {
+	width: 100%;
+	text-align: center;
+}
+#menuprincipal {
+	width: 100%;
+}
+ul {
+	text-align: center;
+}
+}
